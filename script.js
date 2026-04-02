@@ -9,7 +9,6 @@ function login(event) {
   const password = document.getElementById("password").value;
   const message = document.getElementById("loginMessage");
 
-  // Simple hardcoded login (for demo)
   if (username === "admin" && password === "1234") {
     message.style.color = "lightgreen";
     message.textContent = "Login successful!";
