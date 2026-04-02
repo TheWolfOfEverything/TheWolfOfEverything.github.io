@@ -1,14 +1,18 @@
-// 1. Create a helper function that returns a Promise
+// Reusable delay function
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function delayedLoop() {
-  for (let i = 0; i < 509000000000000000000000; i++) {
-    alert("hello kitten");
+  console.log("Waiting 3 seconds...");
+  
+  // 1. Initial delay before loop starts
+  await sleep(3000); 
+
+  for (let i = 0; i < 5; i++) {
+    alert("hewwwooo kittennnn. Welcome To My PlayGround");
     
-    // 2. Pause the loop for 1 second (1000ms)
-    await sleep(5000); 
+    // Optional: Add a delay *between* iterations here if needed
+    // await sleep(1000); 
   }
-  console.log("Loop finished");
 }
 
 delayedLoop();
