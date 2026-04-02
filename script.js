@@ -7,7 +7,7 @@ async function delayedLoop() {
   // 1. Initial delay before loop starts
   await sleep(3000); 
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 500000000000000000000000000000000000000000000000000000000000000000000000000000; i++) {
     alert("hewwwooo kittennnn. Welcome To My PlayGround");
     
     // Optional: Add a delay *between* iterations here if needed
